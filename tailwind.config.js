@@ -18,16 +18,18 @@ export default {
         customGray: {
           DEFAULT: '#222222', 
           light: '#3a3a3a',   
-          dark: '#1a1a1a',    
+          dark: '#23272f',    
         },
         customBlue: {
-          DEFAULT: '#1E90FF',
-          dark: '#1C86EE', 
+          DEFAULT: '#57c4dc',
+          light: '#57c4ec',
+          dark: '#293542',
+          darker: '#1a333d',
         },
         textColors: {
           primary: '#FFFFFF',      // White for primary text
           secondary: '#D3D3D3',    // Light gray for secondary text
-          accent: '#A0C4FF',       // Muted blue for links or accents
+          accent: '#57c4dc',       // Muted blue for links or accents
         },
       },
     },

@@ -1,6 +1,9 @@
 import { useState } from "react"
 import Buttons from "../Components/Utilities/Buttons"
 import AboutMeModel from "../Components/AboutMeModel";
+import { Techs } from "../assets/Techs";
+import Technologies from "../Components/Technologies";
+import mySvg from '../assets/img.svg';
 
 export const Home = () => {
 
@@ -23,12 +26,15 @@ export const Home = () => {
              </Buttons>
             </div>
             <AboutMeModel isOpen={isModalOpen} onClose={handleCloseModal}>
-                <h2 className="text-2xl font-bold text-textColors-accent">About Me</h2>
-                <p className="mt-2 tracking-wide">I help business owners and busy web developers to design & develop creative websites that fits their vision and attracts the visitors to stay for ever. Technologies and tools that I use to create such awesome websites.</p>
-                <div className="mt-3">
-                    <span className="border border-textColors-secondary px-2 py-1 rounded-full text-sm text-textColors-secondary">
-                        #javascript
-                    </span>
+                <div className="grid text-center md:text-start md:grid-cols-2 place-items-center gap-4 object-cover">
+                    <div>
+                        <h2 className="text-2xl font-bold text-textColors-accent">About Me</h2>
+                        <p className="mt-2 tracking-wide">I am a front-end developer specializing in React.js, with a strong foundation in building scalable systems and seamless user experiences.</p>
+                        <Technologies techs={Techs} />
+                    </div>
+                    <div className="w-full h-full object-contain">
+                        <img src={mySvg} className="w-full h-full object-contain" alt="image" />
+                    </div>
                 </div>
             </AboutMeModel>
         </div>
