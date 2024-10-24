@@ -6,7 +6,7 @@ import NodeIcon from "../assets/nodejs-icon.svg";
 
 const Technologies = ({ techs }) => {
   return (
-    <div className="overflow-hidden">
+    <div>
       <div className="mt-2 gap-2 grid md:grid-cols-2 xl:grid-cols-3 ">
         {techs.map((tech) => (
           <span
